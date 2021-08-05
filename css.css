@@ -1,0 +1,222 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 13px 45px;
+}
+#logo img{
+    height: 70px;
+    width: 70px;
+    margin: 12px 20px;
+    cursor: pointer;
+}
+
+/* Navbar list */
+#navbar ul{
+    display: flex;
+    padding: 5px;
+}
+/* background ke liye pseudo-selectors hi use kara karo */
+#navbar::before{
+    content: "";
+    background-color: black;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    /* so that we can give padding */
+    padding: 5px 17px;
+    border-radius: 20px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a:hover{
+    color: silver;
+    background-color: rgb(255, 225, 52);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 7px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+/* background ke liye pseudo-selectors hi use kara karo */
+#home::before{
+    content: "";
+    background: url(/Projects/Mega-Projects/Project2_Fully_Responsive_Website/Images/bg8.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* Services Section */
+#services{
+    display: flex;
+    /* margin: 3px 6px; */
+    padding: px;
+}
+#services .box{
+    border: 1.5px solid rgb(170, 55, 55);
+    margin: 5px 45px;
+    text-align: center ;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 160px;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3rem;
+    padding: 54px;
+    display: flex;
+    justify-content: center;
+}
+.h-primary-client{
+    font-size: 3rem;
+    padding: 54px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.btn{
+    padding: 15px 20px;
+    margin: 17px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.center{
+    text-align: center;
+}
+
+#client-section{
+    height: 344px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/Projects/Mega-Projects/Project2_Fully_Responsive_Website/Images/bg7.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#clients img{
+    height: 240px;
+    width: 225px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-item{
+    margin: 5px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(/Projects/Mega-Projects/Project2_Fully_Responsive_Website/Images/contact1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+   
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    color: white;
+}
+
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem ;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+footer{
+    background-color: gray;
+    color: white;
+    padding: 9px 20px;
+}
