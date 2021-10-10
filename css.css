@@ -137,6 +137,16 @@
     cursor: pointer;
     font-size: large;
 }
+.btn1{
+    padding: 15px 20px;
+    margin: 17px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+}
 
 .center{
     text-align: center;
